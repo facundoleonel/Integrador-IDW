@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es" class="html-panel">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/panel/main.css" />
+    <title>Bedelia - Inscripcion</title>
+  </head>
+
+  <body>
+    <main class="main-panel">
+      <section class="content-panel">
+        <header class="menu">
+          <button class="btn-responsive" id="btn-responsive"></button>
+          <span id="profile"></span>
+          <span id="menu-list"></span>
+        </header>
+        <section class="panel">
+          <section class="panel-header">
+            <div class="panel-title">
+              <h1>Inscripcion</h1>
+              <h2>Bienvenido al gestor de Inscripciones</h2>
+            </div>
+            <div class="panel-date" id="panel-date">fecha</div>
+          </section>
+          <section class="panel-board mt-3 mb-3">
+            <!-- Formulario de carga -->
+            <section class="form">
+              <form id="search-form">
+                <section id="inputs" class="columns-3 gap-10">
+                  <input type="text" name="s" placeholder="Buscar estudiante" />
+                  <select name="type">
+                    <option value="lastnameOrName">Apellido y/o Nombre</option>
+                    <option value="dni">Dni</option>
+                  </select>
+                  <button type="search">Buscar</button>
+                </section>
+              </form>
+              <!-- Listado de elementos -->
+              <section
+                class="table-list mt-3 mb-3"
+                id="search-result-content"
+                hidden
+              >
+                <h2 class="table-list-title">Estudiantes:</h2>
+                <section id="search-result"></section>
+              </section>
+
+              <!-- <hr> -->
+              <section
+                class="profile-estudiante mb-3"
+                id="profile-estudiante"
+              ></section>
+              <section class="columns-2 gap-10">
+                <article class="table-list">
+                  <h2 class="table-list-title">Asignaturas</h2>
+                  <section id="asignaturas"></section>
+                </article>
+
+                <article class="table-list">
+                  <h2 class="table-list-title">Inscripciones</h2>
+                  <section id="inscripciones"></section>
+                </article>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="./src/js/panel/main.js" type="module"></script>
+  </body>
+</html>

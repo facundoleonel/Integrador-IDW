@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" class="html-panel">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/panel/main.css" />
+    <title>Bedelia - Materia</title>
+  </head>
+
+  <body>
+    <main class="main-panel">
+      <section class="content-panel">
+        <header class="menu">
+          <button class="btn-responsive" id="btn-responsive"></button>
+          <span id="profile"></span>
+          <span id="menu-list"></span>
+        </header>
+        <section class="panel">
+          <section class="panel-header">
+            <div class="panel-title">
+              <h1>Materias</h1>
+              <h2>Bienvenido al gestor de materias</h2>
+            </div>
+            <div class="panel-date" id="panel-date">fecha</div>
+          </section>
+          <section class="panel-board mt-3 mb-3">
+            <!-- Formulario de carga -->
+            <section class="form">
+              <form id="materia-form">
+                <h2>Crear nuevo</h2>
+                <section id="inputs">
+                  <input type="text" name="name" placeholder="Nombre" />
+                  <input
+                    type="number"
+                    name="hours"
+                    placeholder="Horas semanales"
+                  />
+                  <select name="type">
+                    <option value="anual">Anual</option>
+                    <option value="firstTime">Primer cuatrimestre</option>
+                    <option value="secondTime">Segundo cuatrimestre</option>
+                  </select>
+                </section>
+                <div class="form-buttons">
+                  <button type="reset">Limpiar</button>
+                  <button type="submit">Crear</button>
+                </div>
+              </form>
+            </section>
+            <!-- Listado de elementos -->
+            <section class="table-list mt-3">
+              <h2 class="table-list-title">Materias</h2>
+              <section id="materia-result"></section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="./src/js/panel/main.js" type="module"></script>
+  </body>
+</html>

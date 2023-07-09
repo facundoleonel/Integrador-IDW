@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" class="html-panel">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/panel/main.css" />
+    <title>Bedelia - Inicio</title>
+  </head>
+
+  <body>
+    <main class="main-panel">
+      <section class="content-panel">
+        <header class="menu">
+          <button class="btn-responsive" id="btn-responsive"></button>
+          <span id="profile"></span>
+          <span id="menu-list"></span>
+        </header>
+        <section class="panel">
+          <section class="panel-box panel-header">
+            <label class="panel-box-title">
+              Dashboard
+              <span class="subtitle">
+                Bienvenido al gestor de estudiantes, materias y carreras de FCAD UNER
+              </span>
+            </label>
+            <div id="panel-date">fecha</div>
+          </section>
+          <section class="panel-board mt-3 mb-3">
+            <div class="panel-box columns-2">
+              <label class="panel-box-title">
+                Area de trabajo
+                <span class="subtitle">
+                  Las opciones del Menú Principal son: <br>
+                  <ul>
+                    <li><strong>Inicio: </strong> Retorna a la página inicial del sistema desde cualquier otra pantalla.</li>
+                    <li><strong>Estudiantes: </strong> Acceso a la gestión de Estudiantes.</li>
+                    <li><strong>Carreras: </strong> Acceso a la gestión de Carreras.</li>
+                    <li><strong>Materias: </strong>  Acceso a la gestión de Materias.</li>
+                    <li><strong>Creditos: </strong> Desarrolladores Involucrados.</li>
+                    <li><strong>Base de datos:</strong> <button id="import-database">Importar datos</button></li>
+                  </ul>
+                </span>
+              </label>
+              <section id="gif-coffe" class="coffe">
+                <img src="./src/img/loading.gif" alt="loading">
+              </section>
+              </div>
+            </div>
+            <!-- Mostrara los totales cargados -->
+            <div class="columns-3 gap-10 mt-3" id="panel-counter"></div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="./src/js/panel/main.js" type="module"></script>
+  </body>
+</html>

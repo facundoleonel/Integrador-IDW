@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" class="html-panel">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/panel/main.css" />
+  <title>Bedelia - Estudiantes</title>
+</head>
+
+<body>
+  <main class="main-panel">
+    <section class="content-panel">
+      <header class="menu">
+        <button class="btn-responsive" id="btn-responsive"></button>
+        <span id="profile"></span>
+        <span id="menu-list"></span>
+      </header>
+      <section class="panel">
+        <section class="panel-header">
+          <div class="panel-title">
+            <h1>Estudiantes</h1>
+            <h2>Bienvenido al gestor de estudiantes</h2>
+          </div>
+          <div class="panel-date" id="panel-date">fecha</div>
+        </section>
+        <section class="panel-board mt-3 mb-3">
+          <!-- Formulario de carga -->
+          <section class="form">
+            <form id="estudiante-form">
+              <h2>Crear nuevo</h2>
+              <div class="columns-2 gap-20" id="inputs">
+                <input type="number" name="dni" placeholder="Doc. de Identidad" />
+                <input type="text" name="lastname" placeholder="Apellido" />
+                <input type="text" name="name" placeholder="Nombre" />
+                <input type="date" name="birthday" placeholder="Fecha de Nacimiento" />
+                <input type="text" name="nationality" placeholder="Nacionalidad" />
+                <input type="email" name="email" placeholder="Correo Electrónico" />
+                <input type="number" name="phone" placeholder="Celular" />
+                <select name="carrera" id="carrera-option"></select>
+              </div>
+              <div class="form-buttons">
+                <button type="reset">Limpiar</button>
+                <button type="submit">Crear</button>
+              </div>
+            </form>
+          </section>
+          <!-- Listado de elementos -->
+          <section class="table-list mt-3">
+            <h2 class="table-list-title">Estudiantes</h2>
+            <section id="estudiante-result"></section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script src="./src/js/panel/main.js" type="module"></script>
+</body>
+
+</html>
